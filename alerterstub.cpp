@@ -1,5 +1,12 @@
 #include "alerterstub.h"
 
+int alertertstub = 0;
+
+int setalertertstub(int alertstub)
+{
+   alertertstub = alertstub;
+}
+
 int networkAlertStub(float celcius)
 {
     std::cout << "ALERT: Temperature is " << celcius << " celcius.\n";
