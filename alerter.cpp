@@ -30,6 +30,8 @@ int main() {
     alertInCelcius(303.6);
     //assert(alertFailureCount == 1);
 
+    alertInCelcius(392.0);
+
     std::cout << alertFailureCount << " alerts failed.\n";
     std::cout << "All is well (maybe!)\n";
     return 0;
