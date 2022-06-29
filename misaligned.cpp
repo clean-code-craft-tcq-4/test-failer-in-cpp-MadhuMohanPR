@@ -1,4 +1,5 @@
 #include <iostream>
+#include <stdlib.h>
 #include <assert.h>
 
 #define MAJORCOLORELEMENT 5  //MAJORCOLORELEMENT defines number of Major Color
