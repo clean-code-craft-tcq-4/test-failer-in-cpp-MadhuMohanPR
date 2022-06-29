@@ -2,13 +2,13 @@
 #include "alerter.h"
 #include "alerterstub.h"
 
-extern int alertFailureCount;
-
 int main()
 {
+    setalertertstub(200);
     alertInCelcius(400.5);
     assert(alertFailureCount == 0);
 
+    setalertertstub(500);
     alertInCelcius(303.6);
     assert(alertFailureCount == 1);
 
