@@ -1,6 +1,5 @@
-#include <iostream>
 #include <stdlib.h>
-#include <assert.h>
+#include "misaligned.h"
 
 #define MAJORCOLORELEMENT 5  //MAJORCOLORELEMENT defines number of Major Color
 #define MINORCOLORELEMENT 5  //MINORCOLORELEMENT defines number of Minor Color
@@ -27,16 +26,4 @@ int printColorMap()
         }
     }
     return i * j;
-}
-
-int main()
-{
-    int result = printColorMap();
-    assert(result == 25);
-    assert(displayColorPairOnConsole(1,1).compare("6 | Red | Orange"));
-    assert(displayColorPairOnConsole(2,3).compare("13 | Yellow | Slate"));
-    assert(displayColorPairOnConsole(1,0).compare("5 | Red | Blue"));
-    
-    std::cout << "All is well (maybe!)\n";
-    return 0;
 }
