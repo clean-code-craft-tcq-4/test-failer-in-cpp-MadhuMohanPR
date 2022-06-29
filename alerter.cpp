@@ -17,3 +17,8 @@ void alertInCelcius(float farenheit)
         alertFailureCount += 0;
     }
 }
+
+int getAlertFailureCount()
+{
+    return alertFailureCount;
+}
