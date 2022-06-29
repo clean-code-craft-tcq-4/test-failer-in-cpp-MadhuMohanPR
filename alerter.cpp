@@ -28,7 +28,7 @@ int main() {
     assert(alertFailureCount == 0);
 
     alertInCelcius(303.6);
-    //assert(alertFailureCount == 1);
+    assert(alertFailureCount == 1);
 
     alertInCelcius(392.0);
 
