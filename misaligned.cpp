@@ -10,16 +10,17 @@ std::string displayColorPairOnConsole(int majorIndex, int minorIndex)
     const char* majorColor[] = {"White", "Red", "Black", "Yellow", "Violet"};
     const char* minorColor[] = {"Blue", "Orange", "Green", "Brown", "Slate"};
 
-    colorPair = std::to_string(majorIndex * MAJORCOLORELEMENT + minorIndex)  + " | " +  majorColor[majorIndex] + " | " + minorColor[minorIndex] << "\n";
+    colorPair = std::to_string(majorIndex * MAJORCOLORELEMENT + minorIndex)  + " | " +  (majorColor[majorIndex]) + " | " + (minorColor[minorIndex]) << "\n";
 
     return colorPair;
 }
 
 int printColorMap()
 {
-    for(int i = 0; i < MAJORCOLORELEMENT; i++)
+    int i = 0, j = 0;
+    for(i = 0; i < MAJORCOLORELEMENT; i++)
     {
-        for(int j = 0; j < MAJORCOLORELEMENT; j++)
+        for(j = 0; j < MAJORCOLORELEMENT; j++)
         {
             std::cout << displayColorPairOnConsole(i, j) << std::endl;
         }
