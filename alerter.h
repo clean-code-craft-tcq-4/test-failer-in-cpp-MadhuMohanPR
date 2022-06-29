@@ -5,5 +5,6 @@
 #include <assert.h>
 
 void alertInCelcius(float farenheit);
+int getAlertFailureCount();
 
 #endif
