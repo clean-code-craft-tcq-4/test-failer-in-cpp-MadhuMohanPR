@@ -1,4 +1,5 @@
 #include <iostream>
+#include <stdlib.h>
 #include <assert.h>
 
 char size(int cms) {
