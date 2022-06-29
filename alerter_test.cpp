@@ -2,6 +2,8 @@
 #include "alerter.h"
 #include "alerterstub.h"
 
+extern int alertFailureCount;
+
 int main()
 {
     alertInCelcius(400.5);
