@@ -1,5 +1,6 @@
 #include <stdlib.h>
 #include "alerter.h"
+#include "alerterstub.h"
 
 void alertInCelcius(float farenheit)
 {
