@@ -4,7 +4,7 @@
 #include <iostream>
 #include <assert.h>
 
-int alertFailureCount = 0;
+extern int alertFailureCount = 0;
 void alertInCelcius(float farenheit);
 
 #endif
