@@ -1,6 +1,4 @@
-#include <iostream>
 #include <stdlib.h>
-#include <assert.h>
 #include "tshirts.h"
 
 char size(int cms) {
