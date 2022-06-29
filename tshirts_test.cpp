@@ -1,3 +1,6 @@
+#include <iostream>
+#include <stdlib.h>
+#include <assert.h>
 #include "tshirts.h"
 
 int main()
