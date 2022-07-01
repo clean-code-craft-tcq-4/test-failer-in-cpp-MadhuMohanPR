@@ -2,6 +2,6 @@
 #define ALERTERSTUB_H
 
 int networkAlertStub(float celcius);
-int setalertertstub(int alertstub);
+void setalertertstub(int alertstub);
 
 #endif
