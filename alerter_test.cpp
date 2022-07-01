@@ -4,7 +4,7 @@
 
 int alertertstub = 0;
 
-int setalertertstub(int alertstub)
+void setalertertstub(int alertstub)
 {
    alertertstub = alertstub;
 }
