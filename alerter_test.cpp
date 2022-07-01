@@ -2,6 +2,22 @@
 #include "alerter.h"
 #include "alerterstub.h"
 
+int alertertstub = 0;
+
+int setalertertstub(int alertstub)
+{
+   alertertstub = alertstub;
+}
+
+int networkAlertStub(float celcius)
+{
+    std::cout << "ALERT: Temperature is " << celcius << " celcius.\n";
+    // Return 200 for ok
+    // Return 500 for not-ok
+    // stub always succeeds and returns 200
+    return alertertstub;
+}
+
 int main()
 {
     setalertertstub(200);
