@@ -8,14 +8,6 @@ int main()
     int result = printColorMap();
     assert(result == 25);
 
-    /*std::string expected = "0    | White      | Blue";
-    std::string received = displayColorPairOnConsole(0, 0);
-    assert(expected.compare(received)== 0);
-
-    expected = "10   | Black      | Blue";
-    received = displayColorPairOnConsole(2, 0);
-    assert(expected.compare(received)== 0);*/
-
     assert(displayColorPairOnConsole(1,1).compare("6 | Red | Orange"));
     assert(displayColorPairOnConsole(2,3).compare("13 | Yellow | Slate"));
     assert(displayColorPairOnConsole(1,0).compare("5 | Red | Blue"));
