@@ -1,6 +1,7 @@
-#include <stdlib.h>
-#include "alerter.h"
-#include "alerterstub.h"
+#include <iostream>
+#include <assert.h>
+#include "alerter.hpp"
+#include "alerterstub.hpp"
 
 int alertertstub = 0;
 
