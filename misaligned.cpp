@@ -8,13 +8,13 @@ using namespace std;
 
 std::string displayColorPairOnConsole(int majorIndex, int minorIndex)
 {
-    std::ostringstream colorPair;
+    std::ostringstream a;
     const char* majorColor[] = {"White", "Red", "Black", "Yellow", "Violet"};
     const char* minorColor[] = {"Blue", "Orange", "Green", "Brown", "Slate"};
 
-    colorPair<<left<<setw(4)<<(majorColorIdx * MAJORCOLORELEMENT + minorColorIdx ) << " | " <<left<<setw(10)<< majorColor[majorColorIdx] << " | " << minorColor[minorColorIdx]<<"\0";
+    a<<left<<setw(4)<<(majorColorIdx * MAJORCOLORELEMENT + minorColorIdx ) << " | " <<left<<setw(10)<< majorColor[majorColorIdx] << " | " << minorColor[minorColorIdx]<<"\0";
 
-    return colorPair.str();
+    return a.str();
 }
 
 int printColorMap()
