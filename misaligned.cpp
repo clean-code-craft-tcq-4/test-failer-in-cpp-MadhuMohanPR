@@ -1,5 +1,6 @@
 #include <iostream>
 #include <assert.h>
+#include <stdlib.h>
 #include "misaligned.hpp"
 
 #define MAJORCOLORELEMENT 5  //MAJORCOLORELEMENT defines number of Major Color
