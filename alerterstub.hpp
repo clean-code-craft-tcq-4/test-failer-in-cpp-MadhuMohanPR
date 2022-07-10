@@ -1,5 +1,5 @@
-#ifndef ALERTERSTUB_H
-#define ALERTERSTUB_H
+#ifndef ALERTERSTUB_HPP
+#define ALERTERSTUB_HPP
 
 int networkAlertStub(float celcius);
 void setalertertstub(int alertstub);
