@@ -1,8 +1,5 @@
-#ifndef TSHIRTS_H
-#define TSHIRTS_H
-
-#include <iostream>
-#include <assert.h>
+#ifndef TSHIRTS_HPP
+#define TSHIRTS_HPP
 
 std::string displayColorPairOnConsole(int majorIndex, int minorIndex);
 int printColorMap();
