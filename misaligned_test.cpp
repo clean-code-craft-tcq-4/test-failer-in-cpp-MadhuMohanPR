@@ -8,13 +8,13 @@ int main()
     int result = printColorMap();
     assert(result == 25);
 
-    std::string expected = "6    | Red      | Orange";
-    std::string result = displayColorPairOnConsole(1,1);
-    assert(expected.compare(result)== 0);
- 
-    std::string expected = "13    | Yellow      | Slate";
-    std::string result = displayColorPairOnConsole(2,3);
-    assert(expected.compare(result)== 0);
+    std::string expected = "0    | White      | Blue";
+    std::string received = printLine(0, 0);
+    assert(expected.compare(received)== 0);
+
+    expected = "10   | Black      | Blue";
+    received = printLine(2, 0);
+    assert(expected.compare(received)== 0);
 
    /* assert(displayColorPairOnConsole(1,1).compare("6 | Red | Orange"));
     assert(displayColorPairOnConsole(2,3).compare("13 | Yellow | Slate"));
