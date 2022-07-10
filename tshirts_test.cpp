@@ -1,5 +1,6 @@
-#include <stdlib.h>
-#include "tshirts.h"
+#include <iostream>
+#include <assert.h>
+#include "tshirts.hpp"
 
 int main()
 {
