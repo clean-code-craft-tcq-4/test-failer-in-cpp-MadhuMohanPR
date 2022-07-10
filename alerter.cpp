@@ -1,6 +1,7 @@
-#include <stdlib.h>
-#include "alerter.h"
-#include "alerterstub.h"
+#include <iostream>
+#include <assert.h>
+#include "alerter.hpp"
+#include "alerterstub.hpp"
 
 int alertFailureCount = 0;
 
@@ -14,7 +15,7 @@ void alertInCelcius(float farenheit)
         // let us keep a count of failures to report
         // However, this code doesn't count failures!
         // Add a test below to catch this bug. Alter the stub above, if needed.
-        alertFailureCount += 0;
+        alertFailureCount += 1;
     }
 }
 
