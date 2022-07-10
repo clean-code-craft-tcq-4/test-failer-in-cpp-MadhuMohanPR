@@ -1,21 +1,31 @@
-#include <iostream>
 #include <assert.h>
+#include <iomanip>
+#include "misaligned.hpp"
+using namespace std;
 
-int printColorMap() {
+#define MAJORCOLORELEMENT 5  //MAJORCOLORELEMENT defines number of Major Color
+#define MINORCOLORELEMENT 5  //MINORCOLORELEMENT defines number of Minor Color
+
+std::string displayColorPairOnConsole(int majorIndex, int minorIndex)
+{
+    std::ostringstream a;
     const char* majorColor[] = {"White", "Red", "Black", "Yellow", "Violet"};
     const char* minorColor[] = {"Blue", "Orange", "Green", "Brown", "Slate"};
+
+    a<<left<<setw(4)<<(majorIndex * MAJORCOLORELEMENT + minorIndex ) << " | " <<left<<setw(10)<< majorColor[majorIndex] << " | " << minorColor[minorIndex]<<"\0";
+
+    return a.str();
+}
+
+int printColorMap()
+{
     int i = 0, j = 0;
-    for(i = 0; i < 5; i++) {
-        for(j = 0; j < 5; j++) {
-            std::cout << i * 5 + j << " | " << majorColor[i] << " | " << minorColor[i] << "\n";
+    for(i = 0; i < MAJORCOLORELEMENT; i++)
+    {
+        for(j = 0; j < MAJORCOLORELEMENT; j++)
+        {
+            std::cout << displayColorPairOnConsole(i, j) << std::endl;
         }
     }
     return i * j;
-}
-
-int main() {
-    int result = printColorMap();
-    assert(result == 25);
-    std::cout << "All is well (maybe!)\n";
-    return 0;
 }

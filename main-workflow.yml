@@ -1,0 +1,24 @@
+name: Build and Run
+
+on: [push, pull_request]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: tshirts fail
+      run: |
+        g++ -Wall -Wextra -Werror tshirts.cpp tshirts_test.cpp -o tshirts.out
+        bash ./tshirts.out
+    - name: misaligned fail
+      run: |
+        g++ -Wall -Wextra -Werror misaligned.cpp misaligned_test.cpp -o misaligned.out
+        bash ./misaligned.out
+    - name: alerter fail
+      run: |
+        g++ -Wall -Wextra -Werror alerter.cpp alerter_test.cpp -o alerter.out
+        bash ./alerter.out
