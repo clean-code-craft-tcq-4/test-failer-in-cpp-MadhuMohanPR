@@ -12,7 +12,7 @@ std::string displayColorPairOnConsole(int majorIndex, int minorIndex)
     const char* majorColor[] = {"White", "Red", "Black", "Yellow", "Violet"};
     const char* minorColor[] = {"Blue", "Orange", "Green", "Brown", "Slate"};
 
-    a<<left<<setw(4)<<(majorColorIdx * MAJORCOLORELEMENT + minorColorIdx ) << " | " <<left<<setw(10)<< majorColor[majorColorIdx] << " | " << minorColor[minorColorIdx]<<"\0";
+    a<<left<<setw(4)<<(majorIndex * MAJORCOLORELEMENT + minorIndex ) << " | " <<left<<setw(10)<< majorColor[majorIndex] << " | " << minorColor[minorIndex]<<"\0";
 
     return a.str();
 }
