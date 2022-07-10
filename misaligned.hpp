@@ -1,6 +1,7 @@
-#ifndef TSHIRTS_HPP
-#define TSHIRTS_HPP
+#ifndef MISALIGNED_HPP
+#define MISALIGNED_HPP
 
+#include <iostream>
 #include <string>
 
 std::string displayColorPairOnConsole(int majorIndex, int minorIndex);
